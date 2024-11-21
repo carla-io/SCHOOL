@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #banner {
+            background-color: #fff;
+            /* Background color of the banner */
+            padding: 10px 0;
+
+        }
+
+        #textlogo-image img {
+            margin-right: 20px;
+            /* Space between the logo and the text */
+
+        }
+
+        #agency-heading {
+
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        #agency-name {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: -5px;
+        }
+
+        #agency-tagline {
+            font-size: 30px;
+            font-weight: normal;
+
+        }
+
+        #agency-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .line-separator {
+            border-top: 1px solid black;
+            margin: 3px 0;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+
+
+        }
+
+
+
+        #programs h2 {
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+
+        .card-text {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .card {
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 20px;
+
+            }
+        }
+
+        .maroon-background {
+            background-color: maroon;
+            padding: 20px;
+            border-radius: 8px;
+
+        }
+
+        .bg-maroon {
+    background-color: maroon;
+    color: white; /* Ensures text is visible on maroon background */
+}
+
+.card-header h5 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+
+        .accordion-button {
+            background-color: #8b0000; /* Maroon color */
+            color: white;
+            border: 1px solid #8b0000;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+
+        .accordion-header {
+            font-weight: bold;
+        }
+
+        .accordion-body {
+            background-color: #f8f9fa;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+	<!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand">DASNHS</a>
+            <button class="navbar-toggler" type="button" data-bs- toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria- controls="navbarSupportedContent" aria-expanded="false"
+                aria- label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#About"" role=" button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">History</a></li>
+                            <li><a class="dropdown-item" href="MissionVision.html">Mission, Vision, Core Values</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+    
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar--> 
+
+<!-- Banner Section -->
+<div id="banner" class="container d-flex justify-content-start align-items-center">
+    <div id="textlogo-image">
+        <img alt="Dr. Arcadio Santos NHS Official Logo" src="logo.jpg" height="100px" width="100px">
+    </div>
+    <div id="agency-text">
+        <div id="agency-heading">Republic of the Philippines</div>
+        <div id="agency-name">Dr. Arcadio Santos NHS</div>
+        <div class="line-separator"></div> <!-- This adds the line under the name -->
+        <div id="agency-tagline">Schools Division of Paranaque City</div>
+    </div>
+</div>
+<!-- End Banner Section -->
+
+
+
+<!-- Accordion Section for History -->
+<div class="container">
+    <div class="accordion" id="historyAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    The Beginning of DASNHS
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#historyAccordion">
+                <div class="accordion-body">
+                    Dr. Arcadio Santos National High School is a secondary school located in the second legislative district of Barangay San Martin de Porres, Parañaque City...
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Establishment of Dr. Arcadio Santos National High School
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#historyAccordion">
+                <div class="accordion-body">
+                    On May 23, 1993, Hon. Mayor Pablo R. Olivarez and his council signed the Municipal Ordinance No. 93-10 s. of 1993, an ordinance that covered PMHS Annex in San Martin de Porres into an independent public high school...
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Nationalization of the School
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#historyAccordion">
+                <div class="accordion-body">
+                    Another significant milestone was added in the history of DASHS. The dream of converting this school into a national high school was realized when Hon. Congressman Roilo Golez passed his House Bill No. 436 in 1996...
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    The School Today
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#historyAccordion">
+                <div class="accordion-body">
+                    Today, DASNHS continues to soar high with its numerous achievements. The school stands as a testament to the vision of its founders and the dedication of the countless educators who have shaped its history...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <!-- Grid container -->
+            <div class="row">
+                <!-- Section: About -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">About Us</h5>
+                    <p>
+                        Dr. Arcadio Santos NHS is committed to providing quality education and fostering a nurturing
+                        learning environment for our students.
+                    </p>
+                </div>
+                <!-- Section: About -->
+
+
+                <!-- Section: Links -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#Home" class="text-dark">Home</a></li>
+                        <li><a href="#ContactUs" class="text-dark">Contact Us</a></li>
+                        <li><a href="#About" class="text-dark">About Us</a></li>
+                    </ul>
+                </div>
+                <!-- Section: Links -->
+
+
+                <!-- Section: Contact -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Information</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>Phone: +63 123 4567</span>
+                        </li>
+                        <li>
+
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: info@arcadiosantosnhs.edu.ph</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location: Paranaque City, Philippines</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Section: Contact -->
+            </div>
+            <!-- Grid container -->
+        </div>
+
+
+        <!-- Copyright Section -->
+        <div class="text-center p-3 bg-dark text-light">
+            © 2024 Dr. Arcadio Santos NHS. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <script>
+        const acc = document.querySelectorAll('.accordion-header');
+        acc.forEach(item => {
+          item.addEventListener('click', function() {
+            this.parentElement.classList.toggle('active');
+          });
+        });
+      </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybGvh3R1tvGO7zImyymj4y5VYXiXrP2i91wX6di6x20f7hD5Vd" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cVKiS5RzvX2y50bCoFtmGx0Hpz1dUm8evW7LVw8ZppR5f/rpPXYQkdvLg6/9Bik8N" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #banner {
+            background-color: #fff;
+            /* Background color of the banner */
+            padding: 10px 0;
+
+        }
+
+        #textlogo-image img {
+            margin-right: 20px;
+            /* Space between the logo and the text */
+
+        }
+
+        #agency-heading {
+
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        #agency-name {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: -5px;
+        }
+
+        #agency-tagline {
+            font-size: 30px;
+            font-weight: normal;
+
+        }
+
+        #agency-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .line-separator {
+            border-top: 1px solid black;
+            margin: 3px 0;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+
+
+        }
+
+
+
+        #programs h2 {
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+
+        .card-text {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .card {
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 20px;
+
+            }
+        }
+
+        .maroon-background {
+            background-color: maroon;
+            padding: 20px;
+            border-radius: 8px;
+
+        }
+
+        .bg-maroon {
+    background-color: maroon;
+    color: white; /* Ensures text is visible on maroon background */
+}
+
+.card-header h5 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand">DASNHS</a>
+        <button class="navbar-toggler" type="button" data-bs- toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria- controls="navbarSupportedContent" aria-expanded="false"
+            aria- label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#About"" role=" button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="History.html">History</a></li>
+                        <li><a class="dropdown-item" href="MissionVision.html">Mission, Vision, Core Values</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+        </div>
+    </div>
+</nav>
+<!-- End Navbar--> 
+
+<!-- Banner Section -->
+<div id="banner" class="container d-flex justify-content-start align-items-center">
+    <div id="textlogo-image">
+        <img alt="Dr. Arcadio Santos NHS Official Logo" src="logo.jpg" height="100px" width="100px">
+    </div>
+    <div id="agency-text">
+        <div id="agency-heading">Republic of the Philippines</div>
+        <div id="agency-name">Dr. Arcadio Santos NHS</div>
+        <div class="line-separator"></div> <!-- This adds the line under the name -->
+        <div id="agency-tagline">Schools Division of Paranaque City</div>
+    </div>
+</div>
+<!-- End Banner Section -->
+
+
+   <!-- About Section -->
+<section id="#SchoolProfile" class="container mt-5">
+    <div class="row">
+        <!-- School Profile Section -->
+<div class="col-md-8">
+    <div class="card">
+        <div class="card-header bg-maroon"> SCHOOL PROFILE
+        </div>
+        <div class="card-body">
+            <p><strong>Name of School:</strong> Dr. Arcadio Santos National High School</p>
+            <p><strong>School ID:</strong> 305428</p>
+            <p><strong>Address:</strong> Km. East service Road, Brgy. San Martín de Porres, Parañaque City</p>
+            <p><strong>Website Address:</strong> <a
+                    href="http://arcadiosantosnhs.depedparanaquecity.com">http://arcadiosantosnhs.depedparanaquecity.com</a></p>
+            <p><strong>E-mail Address:</strong> <a href="mailto:dashns.pque@deped.gov.ph">dashns.pque@deped.gov.ph</a></p>
+            <p><a href="mailto:305428@deped.gov.ph">305428@deped.gov.ph</a></p>
+            <p><strong>Facebook:</strong> Dr Arcadio Santos National High School 305428 PqC</p>
+            <p><strong>School Head:</strong> [School Head Name]</p>
+
+            <!-- Google Maps Embed -->
+            <div class="mt-4">
+                <h5>Location Map</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931.4118702341266!2d121.04156563758266!3d14.494805720744269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf19bbc0ca4b%3A0xf9078335523f2359!2sDr.%20Arcadio%20Santos%20National%20High%20School!5e0!3m2!1sen!2sph!4v1732195223095!5m2!1sen!2sph" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   <!-- DepEd Links & Connect with Us Section -->
+<div class="col-md-4">
+    <!-- DepEd Links -->
+    <div class="card mb-4">
+        <div class="card-header bg-maroon text-white text-center">DEPED LINKS</div>
+        <div class="card-body text-center">
+            <a href="#" class="btn btn-primary btn-block mb-2">Enhanced Basic Education Information System (EBEIS)</a>
+            <a href="#" class="btn btn-success btn-block mb-2">Learning Resource Management and Development System (LRMDS)</a>
+            <img src="https://via.placeholder.com/200x50?text=DepEd+Logo" alt="DepEd Logo" class="img-fluid mb-2">
+            <img src="https://via.placeholder.com/200x50?text=EHRIS" alt="EHRIS Logo" class="img-fluid">
+        </div>
+    </div>
+
+    <!-- Connect with Us -->
+    <div class="card">
+        <div class="card-header bg-maroon text-white text-center">CONNECT WITH US</div>
+        <div class="card-body text-center">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:dashns.pque@deped.gov.ph">dashns.pque@deped.gov.ph</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:dashns.guidance@gmail.com">dashns.guidance@gmail.com</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:dashnsregistrar@gmail.com">dashnsregistrar@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> (63) 8 8357688</p>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="card mt-4">
+        <div class="card-header bg-maroon text-white text-center">SEND US A MESSAGE</div>
+        <div class="card-body">
+            <form action="/submit-contact-form" method="POST" id="contact-form">
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <!-- Message -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <!-- Grid container -->
+            <div class="row">
+                <!-- Section: About -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">About Us</h5>
+                    <p>
+                        Dr. Arcadio Santos NHS is committed to providing quality education and fostering a nurturing
+                        learning environment for our students.
+                    </p>
+                </div>
+                <!-- Section: About -->
+
+
+                <!-- Section: Links -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#Home" class="text-dark">Home</a></li>
+                        <li><a href="#ContactUs" class="text-dark">Contact Us</a></li>
+                        <li><a href="#About" class="text-dark">About Us</a></li>
+                    </ul>
+                </div>
+                <!-- Section: Links -->
+
+
+                <!-- Section: Contact -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Information</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>Phone: +63 123 4567</span>
+                        </li>
+                        <li>
+
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: info@arcadiosantosnhs.edu.ph</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location: Paranaque City, Philippines</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Section: Contact -->
+            </div>
+            <!-- Grid container -->
+        </div>
+
+
+        <!-- Copyright Section -->
+        <div class="text-center p-3 bg-dark text-light">
+            © 2024 Dr. Arcadio Santos NHS. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

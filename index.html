@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial- scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		#banner {
+			background-color: #fff;
+			/* Background color of the banner */
+			padding: 10px 0;
+
+		}
+
+		#textlogo-image img {
+			margin-right: 20px;
+			/* Space between the logo and the text */
+
+		}
+
+		#agency-heading {
+			font-size: 30px;
+			font-weight: normal;
+
+		}
+
+		#agency-name {
+			font-size: 30px;
+			font-weight: bold;
+			margin-top: -5px;
+		}
+
+		#agency-tagline {
+			font-size: 30px;
+			font-weight: normal;
+
+		}
+
+		#agency-text {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+		}
+
+		.line-separator {
+
+			border-top: 1px solid black;
+			margin: 3px 0;
+		}
+
+
+
+		.card-img-top {
+			height: 200px;
+			object-fit: cover;
+
+
+		}
+
+
+
+		#programs h2 {
+			font-weight: bold;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+		}
+
+		.card-title {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+
+		.card-text {
+			font-size: 1rem;
+			text-align: justify;
+		}
+
+		.card {
+			border: 1px solid #333;
+			border-radius: 8px;
+			padding: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			display: flex;
+			flex-direction: column;
+			min-height: 300px;
+			/* Set a minimum height for uniformity */
+		}
+
+		.card-body {
+			flex-grow: 1;
+			/* Makes the body content flexible, allowing cards to grow equally */
+		}
+
+
+		@media (max-width: 768px) {
+			.card {
+				margin-bottom: 20px;
+
+			}
+		}
+
+		.maroon-background {
+			background-color: maroon;
+			padding: 20px;
+			border-radius: 8px;
+
+		}
+
+		.bg-maroon {
+			background-color: maroon;
+			color: white;
+			/* Ensures text is visible on maroon background */
+		}
+
+		.card-header h5 {
+			margin: 0;
+			padding: 5px 0;
+		}
+
+
+		#imageCarousel {
+			max-width: 100%;
+			/* Ensures responsiveness */
+			height: auto;
+			/* Maintains aspect ratio */
+			border-radius: 10px;
+			/* Optional rounded corners */
+		}
+
+		.carousel-inner img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<div class="container-fluid">
+		<a class="navbar-brand">DASNHS</a>
+		<button class="navbar-toggler" type="button" data-bs- toggle="collapse"
+			data-bs-target="#navbarSupportedContent" aria- controls="navbarSupportedContent" aria-expanded="false"
+			aria- label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Contact.html">Contact Us</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#About"" role=" button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						About Us
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="History.html">History</a></li>
+						<li><a class="dropdown-item" href="MissionVision.html">Mission, Vision, Core Values</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+
+		</div>
+	</div>
+</nav>
+<!-- End Navbar--> 
+
+
+	<!-- Banner Section -->
+	<div id="banner" class="container d-flex justify-content-start align-items-center">
+		<div id="textlogo-image">
+			<img alt="Dr. Arcadio Santos NHS Official Logo" src="logo.jpg" height="100px" width="100px">
+		</div>
+		<div id="agency-text">
+			<div id="agency-heading">Republic of the Philippines</div>
+			<div id="agency-name">Dr. Arcadio Santos NHS</div>
+			<div class="line-separator"></div> <!-- This adds the line under the name -->
+			<div id="agency-tagline">Schools Division of Paranaque City</div>
+		</div>
+	</div>
+	<!-- End Banner Section -->
+
+
+	<div id="imageCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+		<!-- Indicators -->
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+
+		<!-- Carousel Inner -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="image1.jpg" class="d-block w-100" alt="Image 1" style="object-fit: cover; height: 400px;">
+			</div>
+			<div class="carousel-item">
+				<img src="courses.jpg" class="d-block w-100" alt="Image 2" style="object-fit: cover; height: 400px;">
+			</div>
+			<div class="carousel-item">
+				<img src="carousel3.png" class="d-block w-100" alt="Image 3" style="object-fit: cover; height: 400px;">
+			</div>
+		</div>
+
+		<!-- Carousel Controls -->
+		<button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+
+
+	<!-- Programs Offered Section -->
+	<section id="programs" class="container my-5">
+		<h2 class="text-center mb-4">Programs Offered</h2>
+
+		<div class="row">
+			<!-- Junior High School -->
+			<div class="col-md-6 mb-4">
+				<div class="card">
+					<div class="card-header bg-maroon text-white">
+						Junior High School
+					</div>
+					<div class="card-body">
+						<p>Junior High School is a lower secondary education which comprises four grade levels – Grades
+							7 to 10. Learners who completed elementary education in any DepEd accredited private and
+							public elementary schools are eligible for this program. The learning areas include
+							Filipino, English, Mathematics, Science, Araling Panlipunan, Edukasyon sa Pagpapakatao
+							(EsP), MAPEH, and TLE, providing competencies and 21st-century skills. A Certificate of
+							Completion is given after successful completion of the curriculum.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Senior High School -->
+			<div class="col-md-6 mb-4">
+				<div class="card">
+					<div class="card-header bg-maroon text-white">
+						Senior High School
+					</div>
+					<div class="card-body">
+						<p>Senior High School is two years of specialized upper secondary education. Students may choose
+							from the Academic Track (General Academic Strand) or the Technical-Vocational-Livelihood
+							(TVL) Track. The TVL track is designed for students who wish to work after graduation by
+							giving them vocational skills such as Bread and Pastry Production, Food and Beverage,
+							Electrical Installation and Maintenance, and Refrigeration and Air Conditioning.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- Academic Track -->
+			<div class="col-md-6 mb-4">
+				<div class="card">
+					<div class="card-header bg-maroon text-white">
+						Academic Track
+					</div>
+					<div class="card-body">
+						<p>General Academic Strand (GAS) is designed for students who are undecided on what course to
+							take in college. It includes subjects such as Applied Economics, Organization and
+							Management, Humanities, Social Sciences, and Disaster Preparedness, preparing learners for
+							various career paths.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Technical-Vocational-Livelihood Track -->
+			<div class="col-md-6 mb-4">
+				<div class="card">
+					<div class="card-header bg-maroon text-white">
+						Technical-Vocational-Livelihood Track (TVL)
+					</div>
+					<div class="card-body">
+						<p>The TVL track equips students with the skills needed for work right after senior high school.
+							It offers courses like Bread and Pastry Production, Food and Beverage, Electrical
+							Installation and Maintenance, and Refrigeration and Air Conditioning.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- ALS -->
+			<div class="col-md-12 mb-4">
+				<div class="card">
+					<div class="card-header bg-maroon text-white">
+						Alternative Learning System (ALS)
+					</div>
+					<div class="card-body">
+						<p>The Alternative Learning System (ALS) is a parallel learning system providing opportunities
+							for out-of-school youth and adult learners to develop literacy and skills. Dr. Arcadio
+							Santos NHS offers ALS courses like Literacy, Accreditation and Equivalency (ACE), InfEd,
+							Basic Computer, Electrical Installation and Maintenance, Refrigeration and Air Conditioning,
+							and Bread and Pastry Production.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<!-- END Programs Offered Section -->
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="bg-light text-center text-lg-start">
+		<div class="container p-4">
+			<!-- Grid container -->
+			<div class="row">
+				<!-- Section: About -->
+				<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase">About Us</h5>
+					<p>
+						Dr. Arcadio Santos NHS is committed to providing quality education and fostering a nurturing
+						learning environment for our students.
+					</p>
+				</div>
+				<!-- Section: About -->
+
+
+				<!-- Section: Links -->
+				<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase">Quick Links</h5>
+
+					<ul class="list-unstyled mb-0">
+						<li><a href="#Home" class="text-dark">Home</a></li>
+						<li><a href="#ContactUs" class="text-dark">Contact Us</a></li>
+						<li><a href="#About" class="text-dark">About Us</a></li>
+					</ul>
+				</div>
+				<!-- Section: Links -->
+
+
+				<!-- Section: Contact -->
+				<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase">Contact Information</h5>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<i class="fas fa-phone"></i>
+							<span>Phone: +63 123 4567</span>
+						</li>
+						<li>
+							<i class="fas fa-envelope"></i>
+							<span>Email: info@arcadiosantosnhs.edu.ph</span>
+						</li>
+						<li>
+
+							<i class="fas fa-map-marker-alt"></i>
+							<span>Location: Paranaque City, Philippines</span>
+						</li>
+					</ul>
+				</div>
+				<!-- Section: Contact -->
+			</div>
+			<!-- Grid container -->
+		</div>
+
+
+		<!-- Copyright Section -->
+		<div class="text-center p-3 bg-dark text-light">
+			© 2024 Dr. Arcadio Santos NHS. All Rights Reserved.
+		</div>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
